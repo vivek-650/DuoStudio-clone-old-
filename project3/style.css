@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gilroy';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #d874ff;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover ;
+    mix-blend-mode: difference;
+}
+#main{
+    background-color: #0f0d0d;
+    cursor: none;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+#nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(99, 96, 96);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+#leftnav img{
+    width: 40px;
+}
+#centernav{
+    display: flex;
+    gap: 18px;
+    
+}
+#centernav li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+#rightnav{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#nav li:nth-child(1){
+    border-bottom: 2px solid white;
+    border-radius: 10%;
+}
+#page1>h1{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: 120px;
+    margin-left: 80px;
+
+}
+#page1>h2{
+    font-size: 100px;
+    font-weight: 500;
+    margin-left: 300px;
+
+}
+#page1>img{
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 2%;
+}
+#page2{
+    min-height: 98vh;
+    width: 100%;
+    background-color: #0f0d0d;
+    border-bottom: 1px solid #111111;
+}
+#page2 h1{
+    font-size: 95px;
+    font-weight: 500;
+    color: #0f0d0d;
+    padding: 50px 60px;
+}
+#page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+#page2left{
+    /* background-color: rebeccapurple; */
+    width: 32%;
+}
+#page2left h2{
+    font-size: 55px;
+    font-weight: 500;
+    color: #111;
+    line-height: 55px;
+}
+#page2right{
+    /* background-color: blue; */
+    width: 19%;
+}
+#page2right p{
+    font-size: 16px;
+    color: #111;
+}
+#page2right button{
+    width: 100%;
+    margin-top: 25px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid #e2a9f8;
+    background-color:#e2a9f8;
+    color: black;
+    font-size: 15px;
+    padding: 0 20px;
+    font-weight: 100;
+    transition: .5s ease-in-out;
+}
+#page2right button:hover{
+    background-color: transparent;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+#page3 h1{
+    font-size: 95px;
+    font-weight: 500;
+    color: white;
+    padding: 50px 60px;
+}
+#page3left img{
+    width: 650px;
+    height: 350PX;
+    /* background-color: purple; */
+    margin-left: 60px;
+}
+#page3right img{
+    width: 250px;
+    height: 400px;
+    background: yellow;
+    position: absolute;
+    left: 75%;
+    top: 45%;
+}
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 9;
+    position: relative;
+    padding: 100px;
+}
+.elem{
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem img{
+    width: 20%;
+    height: 50%;
+    margin-top: 100px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+    left: 20%;
+}
+.elem img:nth-child(3){
+    right: 15%;
+}
+.text-div{
+    /* background-color:#111111;  */
+    height: 125px;
+    overflow: hidden;
+}
+.elem h1{
+    
+    font-size: 7.7vw;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #9b3cc0;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+
+}
+.page5{
+    background-color: black;
+    padding: 50px;
+}
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+    background-color: black;
+}
+.box{
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    border-top: 2px solid #c0c0c0;
+}
+
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+
+}
+
+footer{
+    height: 90vh;
+    width: 100%;
+    background-color: #c662ee; 
+}
+
